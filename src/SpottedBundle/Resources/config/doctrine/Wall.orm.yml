@@ -1,0 +1,25 @@
+SpottedBundle\Entity\Wall:
+  type: entity
+  table: wall
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+      name:
+          column: name
+          type: string
+          nullable: false
+          length: 64
+      createdAt:
+          column: created_at
+          type: datetime
+          nullable: false
+  oneToMany:
+      posts:
+           targetEntity: Post
+           mappedBy: wall
+           cascade: ["all"]
+
+  lifecycleCallbacks: {  }

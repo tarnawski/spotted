@@ -1,0 +1,6 @@
+SpottedBundle\Entity\Wall:
+  properties:
+      name:
+          - NotBlank: ~
+          - Length:
+              max:   64

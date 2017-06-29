@@ -1,0 +1,4 @@
+SpottedBundle\Entity\Wall:
+  wall_{1..10}:
+    name: <word()>
+    createdAt: <dateTimeBetween('-30 days', 'now')>

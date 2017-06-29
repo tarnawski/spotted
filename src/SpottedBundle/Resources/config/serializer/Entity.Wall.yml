@@ -1,0 +1,18 @@
+SpottedBundle\Entity\Wall:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      groups: [WALL_DETAILS]
+    name:
+      expose: true
+      groups: [WALL_DETAILS]
+    createdAt:
+      expose: true
+      groups: [WALL_DETAILS]
+      type: DateTime<'d-m-Y'>
+    posts:
+      expose: true
+      groups: [WALL_DETAILS]
+      type: ArrayCollection<SpottedBundle\Entity\Post>
+      max_depth: 2

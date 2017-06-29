@@ -1,0 +1,5 @@
+SpottedBundle\Entity\Post:
+  post_{1..100}:
+    content: <sentence()>
+    wall: '@wall*'
+    createdAt: <dateTimeBetween('-30 days', 'now')>

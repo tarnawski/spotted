@@ -1,0 +1,13 @@
+SpottedBundle\Entity\Post:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      groups: [POST_DETAILS]
+    content:
+      expose: true
+      groups: [POST_DETAILS]
+    createdAt:
+      expose: true
+      groups: [POST_DETAILS]
+      type: DateTime<'d-m-Y'>

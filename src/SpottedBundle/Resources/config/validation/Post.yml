@@ -1,0 +1,6 @@
+SpottedBundle\Entity\Post:
+  properties:
+      content:
+          - NotBlank: ~
+          - Length:
+              max:   255

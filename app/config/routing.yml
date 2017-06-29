@@ -1,0 +1,2 @@
+api:
+    resource: "@SpottedBundle/Resources/config/routing.yml"

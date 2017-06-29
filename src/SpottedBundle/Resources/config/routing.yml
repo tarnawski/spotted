@@ -1,0 +1,14 @@
+show_wall:
+  path:     /{wall}
+  defaults: { _controller: SpottedBundle:Wall:index, _format: json }
+  methods: [GET]
+
+create_wall:
+  path:     /{wall}
+  defaults: { _controller: SpottedBundle:Wall:create, _format: json }
+  methods: [POST]
+
+create_post:
+  path:     /{wall}/post
+  defaults: { _controller: SpottedBundle:Post:create, _format: json }
+  methods: [POST]
